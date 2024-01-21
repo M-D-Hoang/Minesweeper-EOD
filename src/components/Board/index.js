@@ -13,13 +13,13 @@ import step4 from "../../assets/step4.mp3";
 import errorSound from "../../assets/error.mp3";
 import flag from "../../assets/flag.mp3";
 import win from "../../assets/win.mp3";
-
-const shovelSounds = [shovel1, shovel2, shovel3, shovel4];
-const stepSounds = [step1, step2, step3, step4];
-
 import "./style.css";
 import Stopwatch from "../Stopwatch";
 import EndScreen from "../EndScreen";
+const shovelSounds = [shovel1, shovel2, shovel3, shovel4];
+const stepSounds = [step1, step2, step3, step4];
+
+
 
 class Board extends React.Component {
     state = this.getInitialState();
