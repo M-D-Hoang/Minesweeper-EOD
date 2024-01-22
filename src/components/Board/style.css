@@ -11,10 +11,10 @@
     align-self: center;
     flex-direction: column;
     outline: none;
-    border-top: 5px solid rgb(225, 208, 159);
-    border-left: 5px solid rgb(210, 190, 148);
-    border-right: 5px solid rgb(155, 137, 87);
-    border-bottom: 5px solid rgb(116, 95, 56);
+    border-top: .3vw solid rgb(225, 208, 159);
+    border-left: .3vw solid rgb(210, 190, 148);
+    border-right: .3vw solid rgb(155, 137, 87);
+    border-bottom: .3vw solid rgb(116, 95, 56);
 }
 
 .row {
