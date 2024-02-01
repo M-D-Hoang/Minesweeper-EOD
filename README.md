@@ -7,7 +7,7 @@ Uses class-based components because it is based on an older minesweeper clone th
 Cross the minefield as quickly as possible without blowing up the mines. Reveal and flag cells surrounding the player only to find a path.
 
 ## Controls
-WASD - Caracter movement
+WASD - Character movement
 
 Right click - Flag/Unflag
 
