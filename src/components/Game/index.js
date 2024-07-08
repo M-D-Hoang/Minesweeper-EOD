@@ -2,7 +2,6 @@ import React from "react";
 import Board from "../Board";
 import bloop from "../../assets/bloop.mp3";
 
-
 import "./style.css";
 
 class Game extends React.Component {
@@ -22,7 +21,7 @@ class Game extends React.Component {
 
     changeMines = (value) => {
         new Audio(bloop).play();
-        var mines = ""
+        var mines = "";
         switch (value) {
             case "Easy":
                 mines = 15;
@@ -41,7 +40,11 @@ class Game extends React.Component {
         }
         this.boardElement.current.restartBoard(mines);
 
-        this.setState({ isDropdownDisplayed: false, difficulty : value, mines: mines});
+        this.setState({
+            isDropdownDisplayed: false,
+            difficulty: value,
+            mines: mines,
+        });
     };
 
     displayDropdown = () => {

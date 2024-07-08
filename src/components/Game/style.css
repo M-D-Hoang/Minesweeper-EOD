@@ -3,58 +3,61 @@
     overflow: hidden;
     margin: 0 auto;
     color: white;
-  }
+}
 
-button{
-  font-size: 24px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
-  color: white;
-  background-color: rgb(121, 172, 49);
-  border-top: 5px solid rgb(168, 235, 74);
-  border-left: 5px solid rgb(148, 211, 59);
-  border-right: 5px solid rgb(94, 134, 38);
-  border-bottom: 5px solid rgb(80, 116, 31);
-  padding: 10px 20px 10px 20px;
-  transition: background-color 0.5s;
-  margin-top: 20px;
-  height: 55px;
-  text-overflow: clip;
+button {
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(121, 172, 49);
+    border-top: 5px solid rgb(168, 235, 74);
+    border-left: 5px solid rgb(148, 211, 59);
+    border-right: 5px solid rgb(94, 134, 38);
+    border-bottom: 5px solid rgb(80, 116, 31);
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.5s;
+    margin-top: 20px;
+    height: 55px;
+    text-overflow: clip;
 }
 
 button:hover {
-  background-color: rgb(108, 155, 42);
+    background-color: rgb(108, 155, 42);
 }
 
-h1{
-  font-weight: 400;
-  font-size: 65px;
-  letter-spacing: 12px;
-  margin-bottom: 0px;
-  animation-name: title;
-  animation-duration: 4s;
+h1 {
+    font-weight: 400;
+    font-size: 65px;
+    letter-spacing: 12px;
+    margin-bottom: 0px;
+    animation-name: title;
+    animation-duration: 4s;
 }
 
 @keyframes title {
-  from {letter-spacing: 40px;}
-  to {letter-spacing: 12px;}
+    from {
+        letter-spacing: 40px;
+    }
+    to {
+        letter-spacing: 12px;
+    }
 }
 
-p{
-  margin-top: 0px;
-  margin-bottom: 40px;
+p {
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
-.control-buttons{
-  display: flex;
-  justify-content: space-between;
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
-.difficulty-select:not(.show){
-  display: none;
+.difficulty-select:not(.show) {
+    display: none;
 }
-.difficulty-select{
-  height: 55px;
-  position: absolute;
-
+.difficulty-select {
+    height: 55px;
+    position: absolute;
 }

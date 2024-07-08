@@ -8,9 +8,8 @@
     color: #ffffff;
     font-weight: 600;
     transition: background-color 0.2s;
-    border: .25vw solid rgb(187, 170, 122);
+    border: 0.25vw solid rgb(187, 170, 122);
     pointer-events: none;
-
 }
 
 .cell.is-player-nearby.hidden {
@@ -23,10 +22,10 @@
 
 .cell.hidden:not(.is-clicked) {
     background-color: rgb(121, 172, 49);
-    border-top: .25vw solid rgb(168, 235, 74);
-    border-left: .25vw solid rgb(148, 211, 59);
-    border-right: .25vw solid rgb(94, 134, 38);
-    border-bottom: .25vw solid rgb(80, 116, 31);
+    border-top: 0.25vw solid rgb(168, 235, 74);
+    border-left: 0.25vw solid rgb(148, 211, 59);
+    border-right: 0.25vw solid rgb(94, 134, 38);
+    border-bottom: 0.25vw solid rgb(80, 116, 31);
     animation-name: phase-in;
     animation-duration: 1s;
 }
@@ -42,17 +41,24 @@
 
 .left:not(.is-mine) {
     background: url("../../assets/wall-e32pxleft.gif") no-repeat;
-    background-size: 100%;}
+    background-size: 100%;
+}
 
 .is-player.is-mine {
     background: url("../../assets/boom.gif") no-repeat;
-    background-size: 100%;}
+    background-size: 100%;
+}
 
-.is-player.finish{
+.is-player.finish {
     background: url("../../assets/wall-e32pxdance.gif") no-repeat;
-    background-size: 100%;}
+    background-size: 100%;
+}
 
-@keyframes phase-in{
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes phase-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

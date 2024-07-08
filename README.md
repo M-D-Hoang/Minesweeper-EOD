@@ -1,15 +1,15 @@
 # Minesweeper-EOD
-https://m-d-hoang.github.io/Minesweeper-EOD/
 
-Uses class-based components because it is based on an older minesweeper clone that i did not complete. In the end, I did not reuse that much code and would have been better doing this from scratch with functions. 
-
-## Gameplay
 Cross the minefield as quickly as possible without blowing up the mines. Reveal and flag cells surrounding the player only to find a path.
 
 ## Controls
+
 WASD - Character movement
 
 Right click - Flag/Unflag
 
 Left click - Reveal
 
+[Live site](https://m-d-hoang.github.io/Minesweeper-EOD/)
+
+![1720454598940](image/README/1720454598940.png)

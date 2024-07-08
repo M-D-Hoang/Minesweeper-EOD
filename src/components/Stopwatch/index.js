@@ -3,7 +3,6 @@ import React from "react";
 import "./style.css";
 
 class Stopwatch extends React.Component {
-    
     constructor(props) {
         super(props);
         this.state = {
@@ -27,20 +26,23 @@ class Stopwatch extends React.Component {
     }
 
     stop() {
-        this.props.timerCallbackFromBoard(this.state.secondsElapsed)
+        this.props.timerCallbackFromBoard(this.state.secondsElapsed);
         clearInterval(this.incrementer);
         this.incrementer = null;
-      }
+    }
 
-    reset(){
+    reset() {
         this.stop();
-        this.setState({secondsElapsed: 0});
+        this.setState({ secondsElapsed: 0 });
     }
     render() {
         this.start();
-        const highScore = this.props.highScore != 0 ? this.props.highScore: "-"
+        const highScore =
+            this.props.highScore != 0 ? this.props.highScore : "-";
         return (
-            <div className="stopwatch">⏱️{this.state.secondsElapsed}   🏆{highScore}</div>
+            <div className="stopwatch">
+                ⏱️{this.state.secondsElapsed} 🏆{highScore}
+            </div>
         );
     }
 }

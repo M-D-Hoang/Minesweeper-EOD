@@ -8,11 +8,11 @@ class EndScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isDisplayed: props.isDisplayed
+            isDisplayed: props.isDisplayed,
         };
     }
 
-    display(){
+    display() {
         this.setState({ isDisplayed: true });
     }
 
@@ -21,21 +21,23 @@ class EndScreen extends React.Component {
     }
 
     render() {
-        const score = this.props.gameStatus == "win" ? this.props.secondsElapsed : "-"
-        const highScore = this.props.highScore != 0 ? this.props.highScore : "-"
+        const score =
+            this.props.gameStatus == "win" ? this.props.secondsElapsed : "-";
+        const highScore =
+            this.props.highScore != 0 ? this.props.highScore : "-";
         if (this.state.isDisplayed) {
             if (this.props.gameStatus == "win") {
                 new Audio(success).play();
-            } else if (this.props.gameStatus == "lost"){
+            } else if (this.props.gameStatus == "lost") {
                 new Audio(womp).play();
             }
             return (
                 <div
                     className={"overlay " + this.props.gameStatus}
                     onClick={() => this.hide()}>
-                        <div id="endcard">
-                            You {this.props.gameStatus}. ⏱️{score}   🏆{highScore}
-                        </div>
+                    <div id="endcard">
+                        You {this.props.gameStatus}. ⏱️{score} 🏆{highScore}
+                    </div>
                 </div>
             );
         }
